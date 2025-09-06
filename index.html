@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="A Netflix-style responsive landing page built with pure HTML and CSS." />
+  </head>
+  <body>
+    
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="brand" href="#" aria-label="Home">
+          <span class="brand__wordmark" aria-hidden="true">NETFLIX</span>
+        </a>
+        <nav class="nav__actions">
+          <select aria-label="Language" class="select">
+            <option>English</option>
+            <option>हिन्दी</option>
+            <option>Español</option>
+            <option>Français</option>
+            <option>Deutsch</option>
+            <option>Italiano</option>
+            <option>Português</option>
+            <option>Türkçe</option>
+            <option>한국어 (Korean)</option>
+            <option>日本語 (Japanese)</option>
+            <option>中文 (Chinese)</option>
+            <option>العربية (Arabic)</option>
+          </select>
+          <a href="#" class="btn btn--ghost">Sign In</a>
+        </nav>
+      </div>
+    </header>
+
+    
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="overlay" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <h1>Unlimited movies, TV shows and more.</h1>
+        <p class="sub">Watch anywhere. Cancel anytime.</p>
+        <p class="cta__prompt">Ready to watch? Enter your email to create or restart your membership.</p>
+        <form class="cta" action="#" method="post" onsubmit="return false" aria-label="Get Started">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" class="input" name="email" type="email" placeholder="Email address" required />
+          <button class="btn btn--primary">Get Started →</button>
+        </form>
+      </div>
+      <div class="divider" aria-hidden="true"></div>
+    </section>
+
+    
+    <section class="feature-row">
+      <div class="container fr__grid">
+        <div class="fr__text">
+          <h2>Enjoy on your TV</h2>
+          <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+        <div class="fr__media">
+          <div class="tv-frame">
+           <div class="tv-screen">
+             <img src="images\netflixFront.jpeg" alt="TV Show Preview" />
+           </div>
+          </div>
+       <div class="divider" aria-hidden="true">
+       </div>
+      </section>
+
+    <section class="feature-row">
+      <div class="container fr__grid fr__grid--reverse">
+        <div class="fr__text">
+          <h2>Download your shows to watch offline</h2>
+          <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+        <div class="fr__media">
+          <div class="mobile-card">
+            <div class="poster">
+              <img src="images\StrangerThings.jpeg" />
+            </div>
+            <div class="dl-pill">
+              <div class="thumb">
+                 <img src="images\Stranger_Things_logo.png" />
+              </div>
+              <div class="pill__text">
+                <strong>Stranger Things</strong>
+                <span>Downloading...</span>
+              </div>
+              <div class="spinner" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider" aria-hidden="true"></div>
+    </section>
+
+    <section class="feature-row">
+      <div class="container fr__grid">
+        <div class="fr__text">
+          <h2>Watch everywhere</h2>
+          <p>Stream unlimited movies and TV shows on your phone, tablet, laptop and TV.</p>
+        </div>
+        <div class="fr__media">
+          <div class="devices">
+            <div class="laptop">
+              <img src="images\netflix_homepage_1.webp" alt="Laptop" />
+            </div>
+            <div class="tablet">
+              <img src="images\homepage2.jpg" alt="Tablet" />
+            </div>
+            <div class="phone">
+              <img src="images\homepage_3rd.jpg" alt="Phone" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider" aria-hidden="true"></div>
+    </section>
+
+    <section class="feature-row">
+      <div class="container fr__grid fr__grid--reverse">
+        <div class="fr__text">
+          <h2>Create profiles for kids</h2>
+          <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+        </div>
+        <div class="fr__media">
+          <div class="kid-card">
+            <div class="avatar">     
+              <img src="images\kids.jpeg"/> 
+            </div>
+            <div class="kid-pill">
+              <strong>Kids</strong>
+              <span>Safe & fun</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider" aria-hidden="true"></div>
+    </section>
+
+    
+    <section class="faq">
+      <div class="container">
+        <h2 class="center">Frequently Asked Questions</h2>
+
+        <details>
+          <summary>What is Netflix?</summary>
+          <div class="answer">
+            Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more.
+          </div>
+        </details>
+
+        <details>
+          <summary>How much does Netflix cost?</summary>
+          <div class="answer">
+            Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee.
+          </div>
+        </details>
+
+        <details>
+          <summary>Where can I watch?</summary>
+          <div class="answer">
+            Watch anywhere, anytime. Sign in with your account to watch instantly on the web or on devices.
+          </div>
+        </details>
+
+        <details>
+          <summary>How do I cancel?</summary>
+          <div class="answer">
+            Netflix is flexible. There are no annoying contracts and no commitments. Cancel online anytime.
+          </div>
+        </details>
+
+        <details>
+          <summary>What can I watch on Netflix?</summary>
+          <div class="answer">
+            A growing library of films and TV shows, anime, documentaries, and more.
+          </div>
+        </details>
+
+        <p class="cta__prompt center">Ready to watch? Enter your email to create or restart your membership.</p>
+        <form class="cta cta--center" action="#" method="post" onsubmit="return false" aria-label="Get Started">
+          <label class="sr-only" for="email2">Email address</label>
+          <input id="email2" class="input" name="email" type="email" placeholder="Email address" required />
+          <button class="btn btn--primary">Get Started →</button>
+        </form>
+      </div>
+      <div class="divider" aria-hidden="true"></div>
+    </section>
+
+    
+    <footer class="footer">
+      <div class="container footer__grid">
+        <p class="muted">Questions? Call 000-800-040-1843</p>
+        <ul class="footer__links">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help Centre</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Media Centre</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Ways to Watch</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Cookie Preferences</a></li>
+          <li><a href="#">Corporate Information</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Speed Test</a></li>
+          <li><a href="#">Legal Notices</a></li>
+          <li><a href="#">Only on Netflix</a></li>
+        </ul>
+        <div class="footer__bottom">
+          <select aria-label="Language" class="select select--footer">
+            <option>English</option>
+            <option>हिन्दी</option>
+          </select>
+          <span class="muted">Netflix India (Clone UI)</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
